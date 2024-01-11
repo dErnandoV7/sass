@@ -1,0 +1,8 @@
+// Importando arquivos sass
+@import './variaveis';
+@import './header';
+
+.contato {
+    background: $cor;
+    color: $primary;
+}

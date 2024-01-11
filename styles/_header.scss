@@ -1,0 +1,30 @@
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh
+}
+
+header {
+    @include flexCenter();
+    background: $cor;
+    color: $primary;
+
+    button {
+        background: $secondary;
+        cursor: pointer;
+        transition: $time-transition-normal;
+        
+        &:hover {
+            background: transparent;
+            color: $primary;
+        }
+        &::after {
+            content: ", aprendendo SASS";
+        }
+    }
+
+    h1 {
+        color: #ff29ff;
+    }
+}

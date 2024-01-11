@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  background: #3c3c3c;
+  color: blue;
+}
+header button {
+  background: yellow;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header button:hover {
+  background: transparent;
+  color: blue;
+}
+header button::after {
+  content: ", aprendendo SASS";
+}
+header h1 {
+  color: #ff29ff;
+}
+
+.contato {
+  background: #3c3c3c;
+  color: blue;
+}/*# sourceMappingURL=index.css.map */
