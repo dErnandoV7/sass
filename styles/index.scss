@@ -1,8 +1,16 @@
 // Importando arquivos sass
 @import './variaveis';
 @import './header';
+@import './buttons';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .contato {
-    background: $cor;
+    @include flexCenter(80vh, row);
+    background: $secondary;
     color: $primary;
 }

@@ -2,7 +2,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 40vh;
+  min-height: 100vh;
+  flex-direction: row;
   background: #3c3c3c;
   color: blue;
 }
@@ -22,7 +23,33 @@ header h1 {
   color: #ff29ff;
 }
 
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 40px;
+  padding: 2rem;
+}
+.buttons .primary-btn, .buttons .secondary-btn {
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  background: #d8d8d8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .contato {
-  background: #3c3c3c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  flex-direction: row;
+  background: yellow;
   color: blue;
 }/*# sourceMappingURL=index.css.map */

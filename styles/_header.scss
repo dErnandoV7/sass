@@ -1,12 +1,13 @@
-@mixin flexCenter() {
+@mixin flexCenter($height: 100vh, $direction: column) {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 40vh
+    min-height: $height;
+    flex-direction: $direction;
 }
 
 header {
-    @include flexCenter();
+    @include flexCenter(100vh, row);
     background: $cor;
     color: $primary;
 

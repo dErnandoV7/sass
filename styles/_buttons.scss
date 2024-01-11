@@ -1,0 +1,16 @@
+.buttons {
+    @include flexCenter();
+    gap: 40px;
+    padding: 2rem;
+
+    .primary-btn {
+        padding: 10px;
+        font-size: 20px;
+        border: none;
+        background: #d8d8d8;
+    }
+
+    .secondary-btn {
+        @extend .primary-btn;
+    }
+}
